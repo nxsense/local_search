@@ -88,6 +88,11 @@ public class MainMenu {
         System.out.printf("%-16s | %-12s | %-8s%n", "Алгоритм", "Значення ЦФ", "Час (мс)");
         System.out.printf("%-16s | %-12d | %-8.3f%n", "Жадібний", g.value, tg);
         System.out.printf("%-16s | %-12d | %-8.3f%n", "Локальний пошук", l.value, tl);
+        System.out.println("\n=== Деталі рішень ===");
+        System.out.println("Жадібний алгоритм:");
+        System.out.println(g.toPrettyString());
+        System.out.println("Локальний пошук:");
+        System.out.println(l.toPrettyString());
     }
     private static void experimentsMenu(Scanner sc) {
         System.out.print("N_min: "); int nMin = sc.nextInt();
